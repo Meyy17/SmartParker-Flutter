@@ -16,5 +16,9 @@ class GetSizeScreen {
 class Environtment {
   String locationPngImage = "assets/png/";
   String locationSvgImage = "assets/svg/";
-  String baseURLServer = "https://e0fd-103-28-113-244.ngrok-free.app";
+  String locationJsonAsset = "assets/json/";
+  int timeOutDuration = 15;
+  String baseURLServer = "https://frankly-novel-amoeba.ngrok-free.app";
+  double latitudeDev = -6.840444;
+  double longitudeDev = 110.818541;
 }

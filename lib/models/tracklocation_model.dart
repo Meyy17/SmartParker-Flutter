@@ -11,17 +11,17 @@ class TrackLocationModel {
     if (json['payload'] != null) {
       payload = <Payload>[];
       json['payload'].forEach((v) {
-        payload!.add(new Payload.fromJson(v));
+        payload!.add(Payload.fromJson(v));
       });
     }
   }
 
   Map<String, dynamic> toJson() {
-    final Map<String, dynamic> data = new Map<String, dynamic>();
-    data['status'] = this.status;
-    data['message'] = this.message;
-    if (this.payload != null) {
-      data['payload'] = this.payload!.map((v) => v.toJson()).toList();
+    final Map<String, dynamic> data = <String, dynamic>{};
+    data['status'] = status;
+    data['message'] = message;
+    if (payload != null) {
+      data['payload'] = payload!.map((v) => v.toJson()).toList();
     }
     return data;
   }
@@ -77,21 +77,21 @@ class Payload {
   }
 
   Map<String, dynamic> toJson() {
-    final Map<String, dynamic> data = new Map<String, dynamic>();
-    data['id'] = this.id;
-    data['name'] = this.name;
-    data['u_id'] = this.uId;
-    data['street'] = this.street;
-    data['subLocality'] = this.subLocality;
-    data['subAdministrativeArea'] = this.subAdministrativeArea;
-    data['latitude'] = this.latitude;
-    data['longtitude'] = this.longtitude;
-    data['slot'] = this.slot;
-    data['fee'] = this.fee;
-    data['type'] = this.type;
-    data['status'] = this.status;
-    data['createdAt'] = this.createdAt;
-    data['updatedAt'] = this.updatedAt;
+    final Map<String, dynamic> data = <String, dynamic>{};
+    data['id'] = id;
+    data['name'] = name;
+    data['u_id'] = uId;
+    data['street'] = street;
+    data['subLocality'] = subLocality;
+    data['subAdministrativeArea'] = subAdministrativeArea;
+    data['latitude'] = latitude;
+    data['longtitude'] = longtitude;
+    data['slot'] = slot;
+    data['fee'] = fee;
+    data['type'] = type;
+    data['status'] = status;
+    data['createdAt'] = createdAt;
+    data['updatedAt'] = updatedAt;
     return data;
   }
 }

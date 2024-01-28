@@ -21,7 +21,7 @@ Widget headerAuth({
           subtitle,
           maxLines: 2,
           overflow: TextOverflow.ellipsis,
-          style: fontStyleParagraftDefaultColor(context),
+          style: fontStyleSubtitleDefaultColor(context),
         ),
       )
     ],

@@ -29,11 +29,44 @@ TextStyle fontStyleTitleH3DefaultColor(context) {
       color: GetTheme().fontColor(context));
 }
 
+TextStyle fontStyleTitleH3WhiteColor(context) {
+  return const TextStyle(
+      fontSize: 14, fontWeight: FontWeight.w800, color: Colors.white);
+}
+
 TextStyle fontStyleParagraftDefaultColor(context) {
   return TextStyle(
       fontSize: 10,
       fontWeight: FontWeight.w500,
       color: GetTheme().fontColor(context));
+}
+
+TextStyle fontStyleParagraftWhiteColor(context) {
+  return const TextStyle(
+      fontSize: 10, fontWeight: FontWeight.w500, color: Colors.white);
+}
+
+TextStyle fontStyleSubtitleDefaultColor(context) {
+  return TextStyle(
+      fontSize: 12,
+      fontWeight: FontWeight.w500,
+      color: GetTheme().fontColor(context));
+}
+
+TextStyle fontStyleSubtitleSemiBoldDefaultColor(context) {
+  return TextStyle(
+      fontSize: 12,
+      fontWeight: FontWeight.w800,
+      color: GetTheme().fontColor(context));
+}
+
+TextStyle fontStyleSubtitleSemiBoldNonColor(context) {
+  return const TextStyle(fontSize: 12, fontWeight: FontWeight.w800);
+}
+
+TextStyle fontStyleSubtitleSemiBoldWhiteColor(context) {
+  return const TextStyle(
+      fontSize: 12, fontWeight: FontWeight.w800, color: Colors.white);
 }
 
 TextStyle fontStyleParagraftBoldDefaultColor(context) {

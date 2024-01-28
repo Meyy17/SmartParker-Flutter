@@ -5,6 +5,14 @@ class GetTheme {
     return const Color(0xffF5F5F5);
   }
 
+  Color errorColor(context) {
+    return const Color(0xffEB6F6F);
+  }
+
+  Color greyOutline(context) {
+    return const Color(0xffE3E3E3);
+  }
+
   Color cardColorGreyDark(context) {
     return const Color(0xffE1E0E6);
   }

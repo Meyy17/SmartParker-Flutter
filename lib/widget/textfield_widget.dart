@@ -8,9 +8,11 @@ Widget inputFieldPrimary(
     Widget? leftWidget,
     Widget? rightWidget,
     bool? isHide,
+    bool? active,
     TextInputType? inputType,
     String? Function(String?)? validator}) {
   return TextFormField(
+      enabled: active,
       keyboardType: inputType,
       obscureText: isHide ?? false,
       validator: validator,
